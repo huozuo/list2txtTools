@@ -30,7 +30,7 @@ def help(str,startIndex):
     :param str:
     :return:
     '''
-    str = str.replace(" ","") # 将所有空格删去
+    str = str.replace(" ","").replace("\'","") # 将所有空格删去, 以及引号
     res = []
     i = startIndex
     pre = startIndex
